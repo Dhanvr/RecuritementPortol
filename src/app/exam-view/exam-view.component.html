@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="nav">
+        <div class="left">
+          <img [src]=imglogo alt="logo" class="logo"/>
+        </div>
+        <div class="middle">
+        <p>Time Available: </p><button class="button1"> <b>00:</b> <br>Hours
+         </button>
+         <button class="button2"> <b>00:</b> <br>Minutes</button>
+         <button class="button3"> <b>01:</b> <br>Seconds</button>
+       
+        </div>
+        <div class="right">
+         <a href=""> <button>Logout</button></a>
+        </div>
+      </div>
+    <div class="main">
+      
+      <div class="head"> <h1>Questions:</h1></div>
+        <div class="flex-container">
+        
+          <div>
+          
+            <button class="btn1" (click)=solve() >Easy</button>
+            <p class="text1">Quantum Computer</p>  
+            <p class="text3">Score:<i>20</i></p>
+            <button class="btn1" (click)=solve() >Solve !</button>
+            <p class="text3">Estimated time to solve <i>30</i> minutes.</p>
+          </div>
+
+          <div>
+            <button class="btn1" (click)=solve() >Normal</button> 
+            <p class="text1">Quantum Computer</p>  
+            <p class="text3">Score: <i>30</i></p>
+            <button class="btn1" (click)=solve() >Solve !</button>
+            <p class="text3">Estimated time to solve <i>60</i> minutes.</p>
+   
+          </div>
+
+          <div> 
+            <button class="btn1" (click)=solve() >Hard</button>
+             <p class="text1">Quantum Computer</p>  
+            <p class="text3">Score: <i>50</i></p>
+            <button class="btn1" (click)=solve() >Solve !</button>
+            <p class="text3">Estimated time to solve <i>90</i> minutes.</p>
+          
+          </div>  
+        </div>
+    </div>
+</div>

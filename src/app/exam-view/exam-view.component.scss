@@ -1,0 +1,154 @@
+$bgcolor: #292F33;
+$textcolor:black;
+$fontsize:2em;
+$width:100%;
+$btncolor:#006699;
+$bdrcolor:#4285F4;
+$fontfamily: 'Times New Roman', Times, serif;
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  background-color:  #F8F9F9;
+
+  .nav {
+          display: flex;
+          flex-direction: row;
+          background-color: white;
+          
+        .left, .middle, .right {
+          flex: 1;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .middle {
+          @extend .nav;
+          justify-content: start;
+          align-content: center;
+          align-items: center;
+        
+          
+          .button1{
+          background-color: red;
+          width: 100px;
+          
+          }
+          .button2{
+            background-color: orange;
+            width: 100px;
+            }
+            .button3{
+              background-color:green;
+              width: 100px;
+              }
+        }
+        .right{
+          @extend .nav;
+          align-items: center;
+          justify-content: end;
+        }
+        .logo {
+          @extend .nav;
+          width: 100px;
+          height:100px;
+        }
+        span{
+          padding: 5px;
+          margin-left: 102px;
+        }
+      button {
+          width:100px;
+          background-color: $btncolor;
+          color: white;
+          padding: 14px 20px;
+          margin-right: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-family:$fontfamily;
+          margin-bottom: 10px;
+        }
+        button:hover {
+          background-color: $btncolor;
+        }
+      b{
+        background-color:$btncolor;
+      }
+      p{
+        font-family: $fontfamily;
+        font-size: large;
+        font-weight: bold;
+        margin-right: 15px;
+      }
+      
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+
+      .head{
+        @extend .main;
+        width: 100%;
+      text-align: center;
+
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width:100%;
+      }
+      
+      .flex-container > div {
+         background-color: #F0FFFF;
+        width: 45%;
+        margin: 10px;
+        height: 3%;
+        border-radius: 8px;
+        border: 1px solid  #ccc;;
+      }
+      .text1{
+      color: $btncolor;
+      margin-left: 10px;
+      font-family: $fontfamily;
+      font-size: x-large;
+      }
+      .btn1{
+        color: white;
+        margin-right: 3px;
+        margin-bottom: 5px;
+        font-size: larger;
+        float:right;
+        width:100px;
+        height: 50px;
+        border-radius: 5px;
+        
+      background-color: $btncolor;
+        font-family: $fontfamily;
+        }
+        .text3{
+          color: gray;
+          margin-left: 10px;
+          font-size: larger;
+          font-family: $fontfamily;
+          }
+          i{
+            color: $btncolor;
+          }
+          a{
+            text-decoration: none;
+          }
+    }
+ 
+  @media screen and (max-width: 700px) {
+   .main, .flex-container, .nav {   
+      flex-direction: column;
+     }
+    }
+}

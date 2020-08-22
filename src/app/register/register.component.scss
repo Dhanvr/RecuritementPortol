@@ -1,0 +1,147 @@
+$bgcolor: #292F33;
+$textcolor:black;
+$fontsize:2em;
+$width:100%;
+$btncolor:#006699;
+$bdrcolor:#4285F4;
+$fontfamily: 'Times New Roman', Times, serif;
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    width: 100%;
+
+  .left, .middle, .right {
+    flex: 1;
+  }
+  
+  .middle {
+    
+    text-align: right;
+    
+    a:hover{
+      background-color: $btncolor;
+    }
+  }
+  .right{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 2%;
+    color:$btncolor;
+    a:hover{
+      color:green;
+    }
+  }
+  
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .item {
+    font-size: 15px;
+    padding: 20px;
+    display: inline-block;
+  }
+ 
+}
+  
+  // end of navifation
+  
+      .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: 5px;
+        background-color:#f2f2f2;
+        padding: 20px;
+
+        .head1{
+            font-size: x-large;
+            font-family: $fontfamily;
+            padding: 10px;
+          }
+          .head2{
+            font-size: large;
+            font-family: $fontfamily;
+          }
+          span{
+              font-family: $fontfamily;
+              
+          }
+
+        input[type=text],input[type=email],textarea, select {
+          justify-content: center;
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+          input[type=submit] {
+            width: 40%;
+            background-color: $btncolor;
+            color: white;
+            padding: 14px 20px;
+            margin: 20px 20%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          span{
+            padding: 1%;
+          }
+          input[type=submit]:hover {
+            background-color: $btncolor;
+          }
+
+      }
+    
+      
+    /* Footer */
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color:$bgcolor;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 5px;
+    
+  }
+
+
+
+    @media screen and (max-width: 700px) {
+  .container, .nav,.main,.footer {   
+    flex-direction: column;
+  
+  }
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+}
